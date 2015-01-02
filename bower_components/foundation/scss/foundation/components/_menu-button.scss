@@ -1,0 +1,329 @@
+.menu-button {
+  @include button;
+  border: 1px solid #444;
+  background-color: $body-bg;
+  border-radius: $global-radius;
+  &:hover {
+    color: $secondary-color;
+  }
+}
+.tab-bar .menu-icon:hover {
+  color: $secondary-color;
+  & span::after {
+    box-shadow:  0 0px 0 1px $secondary-color, 0 7px 0 1px $secondary-color, 0 14px 0 1px $secondary-color
+  }
+}
+.b_languages {
+  background-color: $body-bg;
+  color: $primary-color;
+  margin-bottom: 0;
+  padding: 0;
+  line-height: 2rem;
+  border-bottom: 1px solid $secondary-color;
+  transition: background-color 300ms ease-out, color 300ms ease-out, border-bottom 300ms ease-out;
+}
+.b_languages:hover {
+  background-color: $primary-color;
+  color: $secondary-color;
+  border-bottom: 1px solid $primary-color;
+}
+header, footer {
+  background-color: $secondary-color;
+  padding: 10px 0;
+  border-bottom: 1px solid #aaa;
+  border-top: 1px solid #aaa;
+}
+.slider_content {
+  background-color: $body-bg;
+  padding: 15px;
+  box-shadow: inset 0 0 8px $primary-color;
+}
+
+@media #{$large-up}, #{$landscape} {
+  .valign-middle {
+      display: table;
+
+      > .columns {
+          display: table-cell;
+          vertical-align: middle;
+      }
+
+      > .columns, > [class*="column"] + [class*="column"]:last-child {
+          float: none;
+      }
+  }
+  .fi-procprod {
+    width: 100%;
+  }
+
+  h2 {
+    font-size: 1.6875rem;
+  }
+}
+
+@media #{$landscape} and (max-width: 1024px) {
+  .small-16.slider_content {
+    width: 50%;
+
+  }
+  .small-16.desc {
+    width: 50%;
+  }
+  .small-16.desc h2 {
+    font-size: 1.5rem;
+  }
+}
+@media #{$landscape} and (max-width: 480px)   {
+  .small-16.slider_content, .small-16.desc {
+    width: 100%;
+    float: left;
+    display: block;
+  }
+}
+
+
+.title-area img {
+  max-height: 80px;
+}
+
+header, article {
+  margin-top: 1.5rem;
+}
+
+.text_centered {
+  text-align: center;
+}
+
+.descrizione ul li > *, .descrizione ul li:before{
+  transition: border-color 300ms ease-out, color 300ms ease-out;
+}
+
+.descrizione ul li > p {
+  font-family: $font-family-sans-serif;
+  color: $primary-color;
+}
+
+.descrizione ul li:before {
+  color: $secondary-color;
+  font-size: 2.5rem;
+}
+
+.descrizione ul li > h5 {
+  margin-top: 1rem;
+}
+
+.descrizione ul li:hover > hr {
+  border-color: $primary-color;
+}
+
+.descrizione ul li:hover:before {
+  color: $primary-color;
+}
+
+
+footer {
+  text-align: center;
+
+}
+
+footer p {
+  margin-bottom: 0;
+}
+
+body {
+  height: auto;
+}
+
+.tab-bar {
+  margin-bottom: 1rem;
+}
+
+.prodlist {
+  border: 1px solid $secondary-color;
+  background-color: $body-bg;
+  color: $primary-color;
+  transition: box-shadow 300ms ease-out, background-color 300ms ease-out;
+}
+
+.prodlist p {
+  font-family: "Open Sans", sans-serif;
+  margin: 1rem 0 0;
+}
+
+.prodlist:hover {
+  background-color: $vapor;
+  color: $primary-color;
+  box-shadow: 0 0 20px #444;
+
+}
+
+.product img {
+  width: 100%;
+}
+//* standard style*//
+.drop {
+  display: block;
+  position: relative;
+  background-color: rgba(214,214,214,0.9);
+  padding: 10px;
+  border-radius: $global-radius;
+  border: 1px solid $primary-color;
+  margin-bottom: 1rem;
+}
+
+.drop p, .drop li {
+  font-size: 0.9rem;
+}
+
+.drop h5 {
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid $primary-color;
+}
+
+.hover-mag {
+    display: none;
+}
+
+
+.relative-pos h6 {
+  font-weight: 300;
+}
+
+@media #{$large-up} {
+  .relative-pos {
+    position: relative;
+  }
+
+  .inner-title {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+  div[class^="pos-"], div[class*="pos-"] {
+    position: absolute;
+    color: transparent;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .info-btn {
+    position: absolute;
+    top: 0;
+    padding: 0 50px 50px 0;
+  }
+
+  .pos-2 {
+    top: 29%;
+    left: 62%
+  }
+
+  .struttura {
+    top: 36%;
+    left: 37%;
+  }
+
+  .pos-3 {
+    top: 25%;
+    left: 80%;
+  }
+
+  .coprirullo {
+    top: 30%;
+    left: 52%;
+  }
+
+  .pos-4 {
+    top: 69%;
+    left: 38%;
+  }
+
+  .aggancio1 {
+    top: 4%;
+    left: 45%;
+  }
+
+  .pos-5 {
+    top: 40%;
+    left: 19%;
+  }
+
+  .aggancio2 {
+    top: 0%;
+    left: 26%;
+  }
+
+  .pos-6 {
+    bottom: 10%;
+    right: 0;
+  }
+
+  .mezzotelaio {
+    top: 11%;
+    left: 63%;
+  }
+
+  .pos-7 {
+    top: 2%;
+    right: 43%;
+  }
+
+  .sicurezza {
+    top: 2%;
+    left: 55%;
+  }
+
+  .pos-8 {
+    top: 30%;
+    right: 43%;
+  }
+
+  .contrappeso {
+    top: 2%;
+    left: 53%;
+  }
+
+
+  .hover-mag {
+    display: block;
+    margin-bottom: 0;
+  }
+
+  .hover-mag:hover + .info, .info:hover {
+    display: block;
+  }
+
+  .drop {
+      display: none;
+      position: absolute;
+      z-index: 99999;
+  }
+
+  .info {
+    top:54px;
+    left: 120px;
+    z-index: 99999;
+  }
+
+  .drop .left {
+    border-right: 1px dashed $primary-color;
+  }
+
+  .cross {
+    background: url(../img/graphic/tooltip.png) no-repeat center;
+  }
+
+  .cross:hover {
+    background-image: url(../img/graphic/tooltipmeno.png);
+  }
+  .hover-mag:hover + .struttura, .struttura:hover, .hover-mag:hover + .coprirullo, .coprirullo:hover,
+  .hover-mag:hover + .aggancio1, .aggancio1:hover, .hover-mag:hover + .aggancio2, .aggancio2:hover,
+  .hover-mag:hover + .mezzotelaio, .mezzotelaio:hover, .hover-mag:hover + .sicurezza, .sicurezza:hover,
+  .hover-mag:hover + .contrappeso, .contrappeso:hover
+   {
+    display: block;
+  }
+
+}
